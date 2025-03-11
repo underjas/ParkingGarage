@@ -1,7 +1,11 @@
 /*Add CSS styles here*/
 #map {
     height: 400px;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 50%;
+>>>>>>> 2dcc2db3186becd0e98f75ecf8f1e26dce90138d
     margin: auto;
 }
 body{
