@@ -6,7 +6,7 @@ var info = L.control();
 // Function to instantiate the Leaflet map
 function createMap() {
     map = L.map('map', {
-        center: [44.5613, -123.2788],  // Center the map on Oregon State University
+        center: [44.5613, -123.279],  // Center the map on Oregon State University
         zoom: 19
     });
 
@@ -40,7 +40,18 @@ function getPS1lines(level) {
 function getLevels(level) {
     return L.esri.featureLayer({
         url: 'https://services1.arcgis.com/dePSdaG71BplHMCO/arcgis/rest/services/PS1_Levels/FeatureServer/2',
-        where: "Level_ = " + level // Filter for the selected level
+        where: "Level_ = " + level, // Filter for the selected level
+        onEachFeature: function (feature, layer){
+            if (feature.properties && feature.properties.Zone) {
+                layer.bindTooltip(feature.properties.Zone, {
+                    permanent: true,
+                    direction: 'center',
+                    className: 'zone-label',
+                    opacity: 1
+            });
+        }
+    }
+
     });
 }
 

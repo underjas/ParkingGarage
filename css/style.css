@@ -1,7 +1,7 @@
 /*Add CSS styles here*/
 #map {
-    height: 750px;
-    width: 80%;
+    height: 550px;
+    width: 40%;
     margin: auto;
 }
 body{
@@ -59,4 +59,11 @@ h1{
     margin-bottom: 0px;
 }
 
-    
+/*Style for zone label */
+.zone-label{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+}
