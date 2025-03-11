@@ -6,15 +6,15 @@ var info = L.control();
 // Function to instantiate the Leaflet map
 function createMap() {
     map = L.map('map', {
-        center: [44.5613, -123.279],  // Center the map on Oregon State University
-        zoom: 19
+        center: [44.5613, -123.2787],  // Center the map on Oregon State University
+        zoom: 18
     });
 
     // Add the base tile layer
     L.tileLayer('https://api.mapbox.com/styles/v1/underjas/cm6zlihch00ef01sle41zhier/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: '© <a href="https://www.mapbox.com/">Mapbox</a>',
-        minZoom: 19,
-        maxZoom: 19,
+        minZoom: 18,
+        maxZoom: 20,
         tileSize: 512,
         zoomOffset: -1,
         accessToken: 'pk.eyJ1IjoidW5kZXJqYXMiLCJhIjoiY202eWpqa3AwMHcyZTJucHM2cDBwcnd0NCJ9.RNRXLOp7rDrsdW0qiOHUFw'
