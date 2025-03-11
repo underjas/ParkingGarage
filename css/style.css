@@ -1,0 +1,62 @@
+/*Add CSS styles here*/
+#map {
+    height: 750px;
+    width: 80%;
+    margin: auto;
+}
+body{
+    background-color: black;
+}
+/*header{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    color:#D73F09;
+}*/
+
+h1{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stratum2', sans-serif;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    background-color: #D73F09;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    }
+
+    h4{color:#D73F09;
+        font-family:Georgia, 'Times New Roman', Times, serif;}
+
+    @font-face {
+        font-family: 'Stratum2';
+        src: url('fonts/Stratum2-Bold.otf') format('otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+ /* Style for the radio button menu */
+.leaflet-control-radio {
+    background-color: rgba(255, 255, 255, 0.8); /* 20% opacity white background */
+    border-radius: 10px; /* Rounded edges */
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for better visibility */
+    font-family: Arial, sans-serif; /* Set a readable font */
+}
+
+/* Style for the radio buttons */
+.leaflet-control-radio input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style for the labels */
+.leaflet-control-radio label {
+    font-size: 14px;
+    color: #333; /* Dark text for better contrast */
+    display: block;
+    margin-bottom: 0px;
+}
+
+    
