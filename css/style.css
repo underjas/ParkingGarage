@@ -1,6 +1,6 @@
 /*Add CSS styles here*/
 #map {
-    height: 400px;
+    height: 300px;
     width: 80%;
     margin: auto;
 }
@@ -22,7 +22,7 @@ h1{
     font-family: 'Stratum2', sans-serif;
     /*font-family: Georgia, 'Times New Roman', Times, serif;*/
     background-color: #D73F09;
-    height: 100px;
+    height: 50px;
     margin: 0;
     position: relative;
     }
@@ -32,7 +32,7 @@ h1{
 
     @font-face {
         font-family: 'Stratum2';
-        src: url('fonts/Stratum2-Bold.otf') format('otf');
+        src: url('../fonts/Stratum2-Bold.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -44,6 +44,7 @@ h1{
     padding: 5px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for better visibility */
     font-family: Arial, sans-serif; /* Set a readable font */
+    line-height: 1;
 }
 
 /* Style for the radio buttons */
@@ -53,18 +54,46 @@ h1{
 
 /* Style for the labels */
 .leaflet-control-radio label {
-    font-size: 14px;
+    font-size: 12px;
     color: #333; /* Dark text for better contrast */
     display: block;
     margin-bottom: 0px;
 }
 
 /*Style for zone label */
-.zone-label{
-    font-family: 'Stratum2', sans-serif;
-    font-size: 20px;
+.zone-label {
+    font-family: 'Stratum2', serif;
+    font-size: 18px;
     font-weight: bold;
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 3px;
+    border-radius: 3px;
+    background: none !important; /* Ensure background is fully removed */
+    box-shadow: none !important;  /* Prevent any box-shadow */
+    border: none !important;      /* Remove any border */
+    text-shadow: 
+        -2px -2px 3px white, 
+         2px -2px 3px white, 
+        -2px  2px 3px white, 
+         2px  2px 3px white;
+    line-height: 1;
 }
+
+.ev-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Style for EV symbol*/
+.ev-icon {
+    width: 13px;
+    height: 13px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
