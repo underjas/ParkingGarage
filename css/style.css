@@ -62,7 +62,7 @@ h1{
 
 /*Style for zone label */
 .zone-label {
-    font-family: 'Stratum2', serif;
+    font-family: 'Stratum2', sans-serif;
     font-size: 18px;
     font-weight: bold;
     padding: 3px;
